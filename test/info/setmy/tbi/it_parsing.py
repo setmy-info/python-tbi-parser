@@ -14,6 +14,8 @@ class ITExample(unittest.TestCase):
         self.assertEqual(tbi['description'], "TBI description")
         self.assertEqual(tbi['authors'][0], "Imre Tabur <imre.tabur@mail.ee>")
         self.assertEqual(tbi['materials'][0], "example.doc")
+        self.assertEqual(tbi['external_process_engine']['config']['jenkins_pipeline']['tbi_dvc_path'],
+                         "path/to/dvc (ML software config can also be there, because config is also data)")
 
 
 if __name__ == '__main__':
