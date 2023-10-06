@@ -11,6 +11,6 @@ setup(
     url='https://github.com/setmy-info/python-tbi-parser',
     packages=find_packages(),
     install_requires=[
-        "pyyaml==6.0.1"
+        "smi-python-commons==0.2.6"
     ],
 )
