@@ -1,3 +1,3 @@
 NAME = "smi_python_tbi_parser"
-VERSION = "0.3.1"
-HASH = "ea0aa8b4d21030409de7513f6d85c7c4b09ee59b"
+VERSION = "0.3.2"
+HASH = "710c5d8f0c1ed2655e8a36548ebf5cfe489bbafc"
