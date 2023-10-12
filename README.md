@@ -58,14 +58,14 @@ python -m unittest discover -s ./test/info/setmy && python -m unittest discover 
 ```shell
 # Win
 set NAME=smi_python_tbi_parser
-set VERSION=0.2.0
+set VERSION=0.3.0
 # *nix
-NAME=smi_python_commons
-VERSION=0.2.0
+NAME=smi_python_tbi_parser
+VERSION=0.3.0
 # Win
-python smi_python_commons/scm_version.py %NAME% %VERSION%
+python -m smi_python_commons.scm_version %NAME% %VERSION%
 # *nix
-python smi_python_commons/scm_version.py ${NAME} ${VERSION}
+python -m smi_python_commons.scm_version ${NAME} ${VERSION}
 git add ./${NAME}/project.py
 git commit -m "project.py updated"
 ```
