@@ -47,12 +47,36 @@ behave
 python -m unittest discover -s ./test/info/setmy && python -m unittest discover -s ./test/info/setmy -p it_*.py && behave
 ```
 
+### Update version info
+
+```shell
+# Win
+set NAME=smi_python_tbi_parser
+set VERSION=0.1.0
+# *nix
+NAME=smi_python_commons
+VERSION=0.1.0
+# Win
+python smi_python_commons/scm_version.py %NAME% %VERSION%
+# *nix
+python smi_python_commons/scm_version.py ${NAME} ${VERSION}
+git add ./smi_python_commons/project.py
+git commit -m "project.py updated"
+```
+
 ## Deploy
 
 ```shell
 python setup.py sdist bdist_wheel
 twine upload dist/*
+git tag -a ${VERSION} -m "${VERSION}"
+git push --tags
 ```
+
+## Release
+
+1. Update version info
+2. Deploy
 
 ```shell
 python setup.py sdist bdist_wheel && twine upload dist/*

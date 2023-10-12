@@ -1,8 +1,10 @@
 from setuptools import setup, find_packages
 
+from smi_python_tbi_parser.project import VERSION, NAME
+
 setup(
-    name='smi_python_tbi_parser',
-    version='0.1.0',
+    name=NAME,
+    version=VERSION,
     description='setmy.info Python TBI parser library.',
     long_description='setmy.info Python TBI parser library.',
     author='Imre Tabur',
@@ -11,6 +13,6 @@ setup(
     url='https://github.com/setmy-info/python-tbi-parser',
     packages=find_packages(),
     install_requires=[
-        "smi-python-commons==0.2.6"
+        "smi-python-commons==0.3.1"
     ],
 )
