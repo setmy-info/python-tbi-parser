@@ -58,10 +58,10 @@ python -m unittest discover -s ./test/info/setmy && python -m unittest discover 
 ```shell
 # Win
 set NAME=smi_python_tbi_parser
-set VERSION=0.3.2
+set VERSION=0.4.0
 # *nix
 NAME=smi_python_tbi_parser
-VERSION=0.3.2
+VERSION=0.4.0
 # Win
 python -m smi_python_commons.scm_version %NAME% %VERSION%
 # *nix
